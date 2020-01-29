@@ -39,8 +39,8 @@ const clone = [...nbs]; // nbs.slice() en ES5
 const coords = {x: 1, y: 2};
 const cloneObj = Object.assign({}, coords);
 
-// Cloner un objet en ES8/ES2017
-const cloneObjES8 = {...coords}; // SPREAD Object
+// Cloner un objet en ES9/ES2018
+const cloneObjES9 = {...coords}; // SPREAD Object
 
 // Destructurer
 //    [1  , 2  , 3, 4    ]
