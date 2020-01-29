@@ -9,6 +9,4 @@ function hello(name = '') {
   return `Hello ${name.toUpperCase()}`;
 }
 
-names.forEach((n) => {
-  console.log(hello(n));
-});
+names.forEach((n) => console.log(hello(n)));

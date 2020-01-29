@@ -34,6 +34,13 @@ const coords = {
 
 coords.z = 3;
 
+for (const key in coords) {
+  if (coords.hasOwnProperty(key)) {
+    const value = coords[key];
+    console.log(key, value);
+  }
+}
+
 // -> à utiliser
 // quand cette forme n'est utilisé qu'une fois
 // ou si plusieurs fois, très simple à créer MAIS sans méthodes
@@ -81,6 +88,11 @@ const romain = new Contact('Romain');
 console.log(romain.hello());
 const jean = new Contact('Jean');
 console.log(jean.hello());
+
+console.log(romain.name !== undefined); // true
+console.log(romain.hello !== undefined); // true
+console.log(romain.hasOwnProperty('name')); // true
+console.log(romain.hasOwnProperty('hello')); // false
 
 console.log(typeof romain); // object
 console.log(typeof Contact); // function

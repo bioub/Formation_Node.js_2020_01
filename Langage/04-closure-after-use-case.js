@@ -41,7 +41,7 @@ for (var i=0; i<3; i++) {
 }
 
 // avec closure
-// ...1s... 3 3 3
+// ...1s... 0 1 2
 for (let i=0; i<3; i++) {
   // portée de closure
   setTimeout(function() {
