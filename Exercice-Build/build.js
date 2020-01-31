@@ -43,7 +43,10 @@ async function minifyJs(file) {
 
 async function hashFile(file) {
   const content = await fs.readFile(file, { encoding: 'UTF-8' });
-  const hash = crypto.createHash('md5').update(content).digest("hex")
+  const hash = crypto
+    .createHash('md5')
+    .update(content)
+    .digest('hex');
 
   const destFile = file.replace('.js', `.${hash}.js`);
 

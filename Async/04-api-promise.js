@@ -15,7 +15,7 @@ function timeout(delay, letter) {
 // console.log('E');
 
 // (async () => {
-//   await timeout(500);
+//   const letter = await timeout(500);
 //   console.log('A');
 //   await timeout(0);
 //   console.log('B');
@@ -49,7 +49,7 @@ function findArray(tab, cb) {
   return Promise.resolve(elt);
 }
 
-// Promise.race(
+// Promise.race([
 //   axios.get(),
 //   timeout(2000),
-// );
+// ]);

@@ -36,3 +36,28 @@ const contacts = [
 // Optionnel :
 // PUT /api/contacts/:id (remplacement)
 // PATCH /api/contacts/:id (remplacement partiel)
+
+
+// PUT /api/contacts/123
+// {
+//  phone: '0622222222',
+//  id: 123
+// },
+
+// {
+  //  phone: '0622222222',
+  //  id: 123
+  // },
+
+  // PATCH /api/contacts/123
+// {
+//  phone: '0622222222',
+//  id: 123
+// },
+
+// {
+  //  "name": "Romain",
+  // "email": "romain.bohdanowicz@gmail.com",
+  //  phone: '0622222222',
+  //  id: 123
+  // },
