@@ -17,14 +17,14 @@ app.use(cors());
 app.use('/api/contacts', contactRoutes);
 app.use('/api/users', userRoutes);
 
-app.use('/api', (req, res, _next) => {
+app.use('/api', (req, res, _) => {
   res.statusCode = 404;
   res.json({
     msg: req.notFoundReason || 'Not Found',
   });
 });
 
-app.use('/api', (err, _req, res, _next) => {
+app.use('/api', (err, _req, res, _) => {
   res.statusCode = 500;
   res.json({
     msg: err.message,

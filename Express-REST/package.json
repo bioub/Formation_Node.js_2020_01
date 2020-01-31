@@ -7,13 +7,21 @@
     "uuid": "^3.4.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "eslint": "^6.8.0",
-    "nodemon": "^2.0.2"
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2",
+    "nyc": "^15.0.0",
+    "sinon": "^8.1.1",
+    "sinon-chai": "^3.4.0"
   },
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "mocha --recursive",
+    "coverage": "nyc --reporter html npm test"
   }
 }
